@@ -14,6 +14,7 @@ const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const url = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon";
 
+// fetch data to check if Pokemon exist or not
 const fetchData = async () => {
   try {
     const res = await fetch(url);
@@ -21,6 +22,8 @@ const fetchData = async () => {
     findPokemon(data);
   } catch (err) {}
 };
+
+// If Pokemon exist following function is executed for info. for that particular pokemon
 
 const fetchData2 = async (idCurr) => {
   try {
@@ -34,7 +37,7 @@ searchBtn.addEventListener("click", fetchData);
 const displayPokemon = (data) => {
   const { name, id, height, weight, stats, types, sprites } = data;
   pokemonImg.innerHTML = `<img id="sprite" src="${sprites.front_default}">`;
-  pokemonId.textContent = id;
+  pokemonId.textContent = " #" + id;
   pokemonName.textContent = name;
   pokemonWeight.textContent = weight;
   pokemonHeight.textContent = height;
