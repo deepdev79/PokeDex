@@ -34,6 +34,14 @@ const fetchData2 = async (idCurr) => {
 };
 
 searchBtn.addEventListener("click", fetchData);
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    searchBtn.click();
+  }
+});
+
+// Display pokemon info
 const displayPokemon = (data) => {
   const { name, id, height, weight, stats, types, sprites } = data;
   pokemonImg.innerHTML = `<img id="sprite" src="${sprites.front_default}">`;
@@ -55,6 +63,7 @@ const displayPokemon = (data) => {
   });
 };
 
+//Find if pokemon exist
 const findPokemon = (data) => {
   let src = [];
   const { results } = data;
@@ -70,7 +79,6 @@ const findPokemon = (data) => {
   while (pokemonTypes.childNodes.length) {
     pokemonTypes.removeChild(pokemonTypes.childNodes[0]);
   }
-  // pokemonTypes.textContent="";
   const id = src[0].id;
   fetchData2(id);
 };

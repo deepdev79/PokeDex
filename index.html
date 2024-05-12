@@ -11,7 +11,7 @@
     <h1>PokeDex</h1>
     <div id="poke-info">
       <div class="info card-1">
-        <label for="search-input">Enter Pokemon name or #number</label>
+        <label for="search-input">Enter Pokemon name or #number:</label>
         <input id="search-input" required />
         <button id="search-button">Search</button>
       </div>
@@ -24,12 +24,8 @@
           <p id="weight"></p>
           <p id="height"></p>
         </div>
-        <div class="info">
-          <div id="poke-img"></div>
-        </div>
-        <div class="info">
-          <p id="types"></p>
-        </div>
+        <div id="poke-img"></div>
+        <p id="types"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">BASE</p>
@@ -37,27 +33,27 @@
       </div>
       <div class="stat-info">
         <p class="stat-box">HP:</p>
-        <p class="stat-box" id="hp"></p>
+        <p class="stat-box stat-result" id="hp"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">Attack:</p>
-        <p class="stat-box" id="attack"></p>
+        <p class="stat-box stat-result" id="attack"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">Defense:</p>
-        <p class="stat-box" id="defense"></p>
+        <p class="stat-box stat-result" id="defense"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">Special-Attack:</p>
-        <p class="stat-box" id="special-attack"></p>
+        <p class="stat-box stat-result" id="special-attack"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">Special-Defense:</p>
-        <p class="stat-box" id="special-defense"></p>
+        <p class="stat-box stat-result" id="special-defense"></p>
       </div>
       <div class="stat-info">
         <p class="stat-box">Speed:</p>
-        <p class="stat-box" id="speed"></p>
+        <p class="stat-box stat-result" id="speed"></p>
       </div>
     </div>
     <script src="./script.js"></script>
