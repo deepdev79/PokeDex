@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" crossorigin href="/pokeDex/assets/index-DRbM0IHS.css">
+  </head>
+  <body>
+    <h1>PokeDex</h1>
+    <div id="poke-info">
+      <div class="info card-1">
+        <label for="search-input">Enter Pokemon name or #number:</label>
+        <input id="search-input" required />
+        <button id="search-button">Search</button>
+      </div>
+      <div class="card-2">
+        <div class="info">
+          <p id="pokemon-name"></p>
+          <p id="pokemon-id"></p>
+        </div>
+        <div class="info">
+          <p id="weight"></p>
+          <p id="height"></p>
+        </div>
+        <div id="poke-img"></div>
+        <p id="types"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">BASE</p>
+        <p class="stat-box">STAT</p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">HP:</p>
+        <p class="stat-box stat-result" id="hp"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">Attack:</p>
+        <p class="stat-box stat-result" id="attack"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">Defense:</p>
+        <p class="stat-box stat-result" id="defense"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">Special-Attack:</p>
+        <p class="stat-box stat-result" id="special-attack"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">Special-Defense:</p>
+        <p class="stat-box stat-result" id="special-defense"></p>
+      </div>
+      <div class="stat-info">
+        <p class="stat-box">Speed:</p>
+        <p class="stat-box stat-result" id="speed"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
