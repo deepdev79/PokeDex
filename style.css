@@ -12,7 +12,8 @@
 h1 {
   text-align: center;
 }
-span {
+span,
+p {
   margin-left: 3px;
   margin-right: 2px;
 }
@@ -22,6 +23,19 @@ span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 5px 30%;
+  border: 0px solid black;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+}
+
+#poke-img > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-1 {
+  margin-top: 15px;
 }
 .info,
 .stat-info,
@@ -29,20 +43,76 @@ span {
   display: flex;
 }
 
+#types p {
+  margin: 3px;
+  font-weight: bold;
+}
+
 .stat-info {
   gap: 10px;
 }
 
 .card-2 {
+  margin-top: 10px;
   width: 20vw;
   background-color: azure;
 }
 
 .stat-box {
-  width: 20vw;
+  width: 15vw;
   background-color: plum;
+  text-align: center;
+  font-weight: 700;
 }
 
 .grass {
-  color: green;
+  background-color: green;
+}
+.normal {
+  background-color: grey;
+}
+.fire {
+  background-color: orange;
+}
+.water {
+  background-color: lightblue;
+}
+.electric {
+  background-color: yellow;
+}
+.ice {
+  background-color: aqua;
+}
+.fighting {
+  background-color: red;
+}
+.poison {
+  background-color: purple;
+}
+.flying {
+  background-color: violet;
+}
+.psychic {
+  background-color: palevioletred;
+}
+.bug {
+  background-color: greenyellow;
+}
+.rock {
+  background-color: burlywood;
+}
+.ghost {
+  background-color: #7a57d1;
+}
+.dragon {
+  background-color: #a275e3;
+}
+.steel {
+  background-color: steelblue;
+}
+.dark {
+  background-color: #4f1c4c;
+}
+.fairy {
+  background-color: pink;
 }

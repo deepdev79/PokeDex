@@ -38,9 +38,9 @@ const displayPokemon = (data) => {
   const { name, id, height, weight, stats, types, sprites } = data;
   pokemonImg.innerHTML = `<img id="sprite" src="${sprites.front_default}">`;
   pokemonId.textContent = " #" + id;
-  pokemonName.textContent = name;
-  pokemonWeight.textContent = weight;
-  pokemonHeight.textContent = height;
+  pokemonName.textContent = name.toUpperCase();
+  pokemonWeight.textContent = "Weight: " + weight;
+  pokemonHeight.textContent = "Height: " + height;
   hp.textContent = stats[0]["base_stat"];
   attack.textContent = stats[1]["base_stat"];
   defense.textContent = stats[2]["base_stat"];
